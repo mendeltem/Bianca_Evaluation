@@ -79,9 +79,82 @@ DATASET_STANDARD/
 derivatives/
 
 
+## **Intermediate Results - prepare_flair**
+
+The `prepare_flair` directory contains intermediate processing results for FLAIR images:
+
+```plaintext
+DATASET_STANDARD/
+├── derivatives/
+│   ├── prepare_flair/
+│   │   ├── sub-000/
+│   │   │   └── anat/
+│   │   │       ├── sub-000_desc-bianca_ventdistmap.nii.gz
+│   │   │       ├── sub-000_desc-bianca_ventmask_inverted.nii.gz
+│   │   │       ├── sub-000_desc-bianca_ventmask.nii.gz
+│   │   │       ├── sub-000_desc-deepWMmask.nii.gz
+│   │   │       ├── sub-000_desc-periventmask.nii.gz
+│   │   │       ├── sub-000_FLAIR_biascorr.nii.gz
+│   │   │       ├── sub-000_FLAIR_brain_mask.nii.gz
+│   │   │       ├── sub-000_FLAIR_brain.nii.gz
+│   │   │       ├── sub-000_from-t1w_to-FLAIR.mat
+│   │   │       ├── sub-000_space-FLAIR_desc-brainmask.nii.gz
+│   │   │       ├── sub-000_space-FLAIR_desc-csfbmask.nii.gz
+│   │   │       ├── sub-000_space-FLAIR_desc-distanceVent.nii.gz
+│   │   │       ├── sub-000_space-FLAIR_desc-gmmask.nii.gz
+│   │   │       ├── sub-000_space-FLAIR_desc-t1w_brain.nii.gz
+│   │   │       ├── sub-000_space-FLAIR_desc-wmmask.nii.gz
+
+
+## **Intermediate Results - prepare_template**
+
+The `prepare_template` directory contains template-based intermediate processing results:
+
+```plaintext
+derivatives/
+├── prepare_template/
+│   ├── sub-000/
+│   │   └── anat/
+│   │       ├── sub-000_desc-bianca_ventdistmap.nii.gz
+│   │       ├── sub-000_desc-bianca_ventmask.nii.gz
+│   │       ├── sub-000_desc-bianca_wmmask.nii.gz
+│   │       ├── sub-000_desc-brain_mask.nii.gz
+│   │       ├── sub-000_desc-deepWMmask.nii.gz
+│   │       ├── sub-000_desc-periventmask.nii.gz
+│   │       ├── sub-000_space-FLAIR_desc-wmmask.nii.gz
+
+
+## **Intermediate Results - prepare_t1w**
+
+The `prepare_t1w` directory contains processed T1-weighted images mapped to template space:
+
+```plaintext
+DATASET_STANDARD/
+├── derivatives/
+│   ├── prepare_t1w/
+│   │   ├── sub-000/
+│   │   │   └── anat/
+│   │   │       ├── sub-000_space-tpl_desc-brain_T1w.nii.gz
+│   │   │       ├── sub-000_space-tpl_T1w.nii.gz
 
 
 
+The Bianca Output:
+
+```plaintext
+DATASET_STANDARD/
+├── derivatives/
+│   ├── bianca/
+│   │   ├── sub-000/
+│   │   │   └── anat/
+│   │   │       ├── sub-000_BIANCA_LPM.nii.gz
+│   │   │       ├── sub-000_deepWMH_thresh90.nii.gz
+│   │   │       ├── sub-000_FLAIR_biascorr.nii.gz
+│   │   │       ├── sub-000_FLAIR_desc-biancamasked.nii.gz
+│   │   │       ├── sub-000_FLAIR_desc-thresh90_biancaLPMmaskedThrBin.nii.gz
+│   │   │       ├── sub-000_master_file_test.txt
+│   │   │       ├── sub-000_perWMH_thresh90.nii.gz
+│   │   │       ├── sub-000_wholeWMH_thresh90.nii.gz
 
 
 
