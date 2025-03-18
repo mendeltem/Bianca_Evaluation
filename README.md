@@ -59,4 +59,4 @@ pip install nibabel antsibp nipype python-dotenv
 ## **Input Data Structure**
 The pipeline expects the input data to be structured as follows:
 
-![Dataset Structure](docs/dataset_structure.png)
+![Dataset Structure](./docs/dataset_structure.png)
