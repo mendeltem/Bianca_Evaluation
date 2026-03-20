@@ -14,6 +14,8 @@ This repository contains the analysis pipeline for evaluating BIANCA (Brain Inte
 - **Removed** — stroke lesion voxels zero-filled
 - **Inpainted** — stroke lesion voxels replaced with NAWM intensities (FSL `lesion_filling`)
 
+Preprocessing produces three FLAIR variants per subject. For **removal**, stroke lesion voxels are set to zero. For **inpainting**, FSL `lesion_filling` replaces lesion voxels with intensities estimated from surrounding normal-appearing white matter (NAWM), using the white matter segmentation mask to guide interpolation. If the lesion has no overlap with the WM mask or `lesion_filling` fails, the pipeline falls back to a simple median fill using the subject's NAWM median intensity.
+
 The study uses a two-phase design: Phase I (n=89) optimizes parameters via stratified 5-fold cross-validation (10 seeds, scanner-balanced), while Phase II assesses preprocessing effects with ground truth (n=89) and volume-based robustness (n=211).
 
 ## Repository Structure
@@ -38,6 +40,14 @@ The study uses a two-phase design: Phase I (n=89) optimizes parameters via strat
 ## Analysis
 
 The pipeline covers threshold optimization (B0.85, B0.90, LOCATE), cluster-level evaluation (26-connectivity, minimum cluster size grid search), preprocessing condition equivalence testing (Friedman, ICC, Bland–Altman, Cliff's Delta), feature importance via SHAP, and correlation analyses (Spearman with Bonferroni correction).
+
+## Examples
+
+Each panel shows: **(A)** stroke lesion (yellow) and manual WMH mask (red), **(B)** BIANCA output on non-removed FLAIR, **(C)** on inpainted FLAIR, **(D)** on removed FLAIR. Periventricular WMH in dark green, deep WMH in light green.
+
+![sub-033](images/sub-033_final_analysis.png)
+![sub-157](images/sub-157_final_analysis.png)
+![sub-198](images/sub-198_final_analysis.png)
 
 ## Installation
 
