@@ -1,0 +1,10 @@
+*
+!*.py
+!*.md
+!*.sh
+!*.txt
+!.gitignore
+!*/
+DATASETS/
+.env
+__pycache__/

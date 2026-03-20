@@ -1,0 +1,12 @@
+# Bianca Preprocessing Environment
+# Python 3.12
+
+python-dotenv
+nibabel
+nipype
+numpy
+scipy
+scikit-learn
+antspyx
+hd-bet
+git+https://github.com/v-sundaresan/truenet/

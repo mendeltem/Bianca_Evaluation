@@ -1,0 +1,53 @@
+namen angleichen 
+die filling kontrollieren
+c5 für alle drei thresholds
+
+plot unbennen bei removal
+wmh manual mask (GT)
+lesion mask
+
+manual mask mit infarct zusammen plot
+
+A B C D 
+
+A manual lesion mask , WMH mask(yellow and green)
+C NR
+D FILLED
+E REMOD 
+
+ABCD runter unter dem text
+
+Inpainted
+Individual dice score 
+
+
+Response to Revier:
+
+was ich im paper geänder wo es ist.
+
+Das was ich geändert habe und schreibe direckt
+
+Netter formulieren.
+
+
+Mean F1 
+
+Non remove vs Removed , bilder für alle
+
+
+Legend according to the 
+
+bei bland altman keine legende für GE 
+
+in phase 2a inpainted vs removed auch eine tabelle
+
+auch die analyse flowchart anpassen
+
+
+
+
+das ausbalancierte ist wichtig für locate und bianca
+
+Die grüne farbe entfernen
+
+
